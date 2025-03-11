@@ -10,7 +10,7 @@ import java.util.List;
  * @see Agenda
  */
 
-public class Contacto {
+public class Persona {
     private String name;    // nombre del contacto
     private List<String> phones;    //Lista de números de teléfono
 
@@ -20,7 +20,7 @@ public class Contacto {
      * @param phone
      */
 
-    public Contacto(String name, String phone) {
+    public Persona(String name, String phone) {
         this.name = name;
         this.phones = new ArrayList<>();
         this.phones.add(phone);
