@@ -9,7 +9,7 @@ import java.util.*;
  * @version 1.0
  * @see Persona
  */
-public class Agenda {
+public class Agenda implements IAgenda {
     private List<Persona> contacts; // Lista de Persona
 
     /**
@@ -24,6 +24,7 @@ public class Agenda {
      * @param name
      * @param phone
      */
+    @Override
     public void addContact(String name, String phone) {
         boolean exists = false;
         for (Persona c : contacts) {
@@ -44,6 +45,7 @@ public class Agenda {
      * Este metodo se usa para eliminar un contacto
      * @param name Nombre del contacto
      */
+    @Override
     public void removeContact(String name) {
         Iterator<Persona> it = contacts.iterator();
 
@@ -62,6 +64,7 @@ public class Agenda {
      * @param oldPhone Telefono actual del contacto
      * @param newPhone Telefono nuevo del contacto
      */
+    @Override
     public void modifyPhoneNumber(String name, String oldPhone, String newPhone) {
         for (Persona c : contacts) {
             if (c.getName().equalsIgnoreCase(name)) {
@@ -80,6 +83,7 @@ public class Agenda {
      * Este metodo se usar para obtener un contacto
      * @return Devuelve el contacto.
      */
+    @Override
     public List<Persona> getContacts() {
         return this.contacts;
     }
