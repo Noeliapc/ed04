@@ -41,4 +41,20 @@ public class Contacto {
     public List<String> getPhones() {
         return this.phones;
     }
+
+    /**
+     * Esto nos permite modificar el nombre
+     * @param name
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Esto nos permite modificar el telefono.
+     * @param phones
+     */
+    public void setPhones(List<String> phones) {
+        this.phones = phones;
+    }
 }
