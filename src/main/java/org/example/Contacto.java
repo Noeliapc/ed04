@@ -10,7 +10,7 @@ import java.util.List;
  * @see Agenda
  */
 
-class Contacto {
+public class Contacto {
     private String name;    // nombre del contacto
     private List<String> phones;    //Lista de números de teléfono
 
